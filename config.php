@@ -54,7 +54,7 @@ $THEME->sheets = array(
 // this theme's /styles/ directory.
 ////////////////////////////////////////////////////
 
-$THEME->enable_dock = false;
+$THEME->enable_dock = true;
 
 ////////////////////////////////////////////////////
 // Do you want to use the new navigation dock?
@@ -71,49 +71,49 @@ $THEME->editor_sheets = array('editor');
 $THEME->layouts = array(
     'base' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     'standard' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     'course' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre'
     ),
     'coursecategory' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     'incourse' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     'frontpage' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-center'),
         'defaultregion' => 'side-pre',
          'options' => array('nonavbar'=>true),
     ),
     'admin' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-center'),
         'defaultregion' => 'side-pre',
     ),
     'mydashboard' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     'mypublic' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre', 'side-post'),
+        'regions' => array('side-pre', 'side-center', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
@@ -151,7 +151,7 @@ $THEME->layouts = array(
     ),
     'report' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-center'),
         'defaultregion' => 'side-pre',
     ),
 );

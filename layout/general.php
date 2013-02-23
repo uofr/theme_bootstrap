@@ -7,10 +7,13 @@ $hasheader = (empty($PAGE->layout_options['noheader']));
 
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
+$hassidecenter = $PAGE->blocks->region_has_content('side-center', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
+$showsidecenter = ($hassidecenter && !$PAGE->blocks->region_completely_docked('side-center', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
+
 $custommenu = $OUTPUT->custom_menu();
 $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custommenu));
 
@@ -88,7 +91,11 @@ $doctype = $OUTPUT->doctype() ?>
 
 <?php if ($hassidepre) { ?>
 	<div class="span3">
-	<?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+        <div id="region-pre" class="block-region">
+            <div class="region-content">
+				<?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+			</div>
+		</div>
 	</div>
 <?php } ?>
 
@@ -100,14 +107,28 @@ $doctype = $OUTPUT->doctype() ?>
 <?php } else { ?>
     <div class="span12">
 <?php };?>
+		<div id="region-main">
+    		<div class="region-content">
 
-	<?php echo $OUTPUT->main_content() ?>
+			    <div id="region-center" class="block-region">
+			        <div class="region-content">
+			            <?php echo $OUTPUT->blocks_for_region('side-center') ?>
+			        </div>
+			    </div>
+				
+			<?php echo $OUTPUT->main_content() ?>
+    		</div>
+		</div>
 	</div>
              
 <?php if ($hassidepost) { ?>                
 	<div class="span3">
-	<?php echo $OUTPUT->blocks_for_region('side-post') ?>
-    </div>
+        <div id="region-post" class="block-region">
+            <div class="region-content">
+			<?php echo $OUTPUT->blocks_for_region('side-post') ?>
+			</div>
+		</div>
+	</div>
 <?php }; ?>          
 </div>
 <!--  END BOOTSTRAP RESPONSIVE -->
