@@ -88,7 +88,11 @@ $doctype = $OUTPUT->doctype() ?>
 
 <?php if ($hassidepre) { ?>
 	<div class="span3">
-	<?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+		<div id="region-pre" class="block-region">
+			<div class="region-content">
+			<?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+			</div>
+		</div>
 	</div>
 <?php } ?>
 
@@ -106,7 +110,11 @@ $doctype = $OUTPUT->doctype() ?>
              
 <?php if ($hassidepost) { ?>                
 	<div class="span3">
-	<?php echo $OUTPUT->blocks_for_region('side-post') ?>
+		<div id="region-post" class="block-region">
+			<div class="region-content">
+			<?php echo $OUTPUT->blocks_for_region('side-post') ?>
+			</div>
+		</div>
     </div>
 <?php }; ?>          
 </div>
