@@ -640,6 +640,48 @@ div.yui3-overlay-content.yui3-widget-stdmod {
 	padding-top: 4px;
 }
 
+.bookshelf_book {
+text-indent: -16px;
+margin-left: 16px;
+display: inline-block;
+}
+
+.block_bookshelf .book_toc_none li {
+margin-top: 5px;
+list-style: none;
+}
+
+.block_bookshelf .book_toc_bullets li {
+margin-top: 5px;
+list-style: none;
+}
+
+.block_bookshelf .book_toc_bullets li li {
+margin-top: 5px;
+list-style: circle;
+}
+
+.block_bookshelf .book_toc_indented li,
+.block_bookshelf .book_toc_numbered li {
+	margin-top: 5px;
+	list-style: none;
+}
+.block_bookshelf .book_toc_indented li li,
+.block_bookshelf .book_toc_numbered li li {
+	margin-top: 5px;
+	list-style: none;
+}
+
+.block_bookshelf .book_toc_numbered ul ul,
+.block_bookshelf .book_toc_none ul ul {
+margin-left: 0px;
+padding-left: 0px;
+}
+
+.path-mod-book .book_toc_numbered {
+font-size: 1em;
+}
+
 .block_navigation .content,.block_settings .content {
 	padding-bottom: 0;
 	padding-left: 0;
