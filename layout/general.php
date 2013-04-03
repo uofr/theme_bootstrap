@@ -1,5 +1,10 @@
 <?php
 
+// include custom uofr functions
+require_once("$CFG->dirroot/local/ur_functions.php");
+
+$course_authornames = print_course_authornames();
+
 $hasheading = ($PAGE->heading);
 $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
@@ -45,7 +50,7 @@ $doctype = $OUTPUT->doctype() ?>
 
 
 <?php if ($hascustommenu) { ?>
-<div id="custommenuwrap"><div id="custommenu"><?php echo $custommenu; ?></div></div>
+<div id="custommenuwrap"><div id="custommenu"><?php echo $custommenu; ?>hello</div></div>
 <?php } ?>
 
 <div id="page">
@@ -54,8 +59,14 @@ $doctype = $OUTPUT->doctype() ?>
 <!-- START OF HEADER -->
     <div id="page-header">
 		<div id="page-header-wrapper" class="wrapper clearfix">
-		    <?php if (empty($PAGE->theme->settings->logo_url)) {?>
-	        <h1 class="headermain"><?php echo $PAGE->heading ?></h1>
+		    <?php if (empty($PAGE->theme->settings->logo_url)) {
+				$headermainlink  = (isset($COURSE->id)) ? $CFG->wwwroot . '/course/view.php?id=' . $COURSE->id : $CFG->wwwroot;
+				//$ur_custom_heading = (strpos($PAGE->heading,$COURSE->shortname)===false) ? $COURSE->shortname.': '.$PAGE->heading : $PAGE->heading;
+				$ur_custom_heading = $COURSE->fullname;
+		?>
+					<a class="logo" href="<?php echo $CFG->wwwroot ;?>"><img src="<?php echo $OUTPUT->pix_url('uofr_sm','theme'); ?>" alt="University of Regina logo" /></a>
+		       		<h1 class="headermain"><a href="<?php echo $headermainlink; ?>"><?php echo $ur_custom_heading ?></a></h1>
+					<?php echo $course_authornames; ?>
 	        <?php } else { ?>
 	        <img src="<?php echo $PAGE->theme->settings->logo_url; ?>">
 	        <?php }?>
@@ -64,7 +75,7 @@ $doctype = $OUTPUT->doctype() ?>
 	                echo $OUTPUT->login_info();
 	        ?>
     	    
-    	    <div class="headermenu">
+    	    <div class="headermenu"> 
         		<?php
 	        	    echo $PAGE->headingmenu;
 		        ?>
