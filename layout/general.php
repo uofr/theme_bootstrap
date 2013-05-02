@@ -85,7 +85,7 @@ $doctype = $OUTPUT->doctype() ?>
 		    	</div>
 		    	
 		    	<?php if ($hasnavbar) { ?>
-	            <div class="navbar clearfix">
+	            <div class="navbar clearfix" id="breadcrumb-wrapper">
 	                <div class="breadcrumb">
 	                	<?php echo $OUTPUT->navbar(); ?>
 	                </div>
