@@ -1,5 +1,177 @@
+/* @override 
+	http://gitmoodle:8888/theme/styles_debug.php?sheet=extra&theme=bootstrap&type=theme */
+
 /* Custom CSS style sheet */
 
 /* Do not add your CSS here, put it in the theme config form */
 
-[[setting:customcss]]
+/* [[setting:customcss]] */
+
+/* @group General */
+
+a, .logininfo a {
+	color: #526a85;
+}
+
+a:hover, .logininfo a:hover {
+	color: #374759;
+}
+
+/* @end */
+
+/* @group Custom Menu */
+
+.navbar-inner, .navbar-fixed-top {
+	 border: none !important; 
+}
+
+#breadcrumb-wrapper {
+	display: inline-block;
+	margin-top: 20px;
+}
+/* @end */
+
+/* @group Header */
+
+.logo {
+	float: left;
+}
+
+.headermain {
+	font-size: 20px;
+}
+
+#page-header-wrapper {
+	padding-top: 20px;
+}
+
+.logininfo {
+	font-size: 11px;
+	background-color: #f3f4f3;
+	padding: 1px 7px 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+}
+
+.logininfo a {
+	font-weight: bold;
+}
+
+.navbutton input[type="submit"] {
+  background-color: #dedede;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(222, 222, 222)), to(rgb(187, 187, 187)));
+  background-image: -webkit-linear-gradient(top, rgb(222, 222, 222), rgb(187, 187, 187));
+  background-image: -moz-linear-gradient(top, rgb(222, 222, 222), rgb(187, 187, 187));
+  background-image: -o-linear-gradient(top, rgb(222, 222, 222), rgb(187, 187, 187));
+  background-image: -ms-linear-gradient(top, rgb(222, 222, 222), rgb(187, 187, 187));
+  background-image: linear-gradient(top, rgb(222, 222, 222), rgb(187, 187, 187));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dedede', EndColorStr='#bbbbbb');
+  color: #555;
+  text-shadow: 0 1px 1px #eaeaea;
+}
+
+.navbutton input[type="submit"]:hover {
+	background-color: #cfcfcf;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(207, 207, 207)), to(rgb(169, 169, 169)));
+	background-image: -webkit-linear-gradient(top, rgb(207, 207, 207), rgb(169, 169, 169));
+	background-image: -moz-linear-gradient(top, rgb(207, 207, 207), rgb(169, 169, 169));
+	background-image: -o-linear-gradient(top, rgb(207, 207, 207), rgb(169, 169, 169));
+	background-image: -ms-linear-gradient(top, rgb(207, 207, 207), rgb(169, 169, 169));
+	background-image: linear-gradient(top, rgb(207, 207, 207), rgb(169, 169, 169));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#cfcfcf', EndColorStr='#a9a9a9');
+	color: #444444;
+	text-shadow: 0 1px 1px #eaeaea;
+}
+
+#breadcrumb-wrapper {
+	background-color: #fdc813;
+	border: none;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	font-weight: bold;
+	color: #feebaa;
+}
+
+.breadcrumb a {
+	color: #ffffff;
+	text-shadow: none;
+	font-size: 13px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.breadcrumb a:first-child {
+	padding-left: 0;
+}
+/* @end */
+
+/* @group Sidebar Blocks */
+
+.block {
+	background-color: #fdfdfd;
+	padding-top: 0px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	border-top: 5px solid #fec913;
+}
+
+.block .header {
+	font-size: 12px;
+	background-color: #f3f4f3;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.block .header h2 {
+	color: #555;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+}
+
+.block .header .commands {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.block .content {
+	font-size: 13px;
+}
+
+.block_tree {
+	margin-top: 5px !important;
+}
+
+.block_tree .tree_item span {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+/* @end */
+
+/* @group Content */
+
+.section {
+	border-bottom: 1px solid #e9eae9 !important;
+}
+
+.course-content h3.sectionname {
+	font-weight: bold !important;
+	border: none !important;
+}
+
+/* @end */
+.adminsearchform {
+	
+}
+.adminsearchform input {
+	position: relative;
+}
+
+.adminsearchform input[type="text"]{
+	margin-left: 0;
+}
