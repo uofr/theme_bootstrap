@@ -63,12 +63,12 @@ $doctype = $OUTPUT->doctype() ?>
 				$headermainlink  = (isset($COURSE->id)) ? $CFG->wwwroot . '/course/view.php?id=' . $COURSE->id : $CFG->wwwroot;
 				//$ur_custom_heading = (strpos($PAGE->heading,$COURSE->shortname)===false) ? $COURSE->shortname.': '.$PAGE->heading : $PAGE->heading;
 				$ur_custom_heading = $COURSE->fullname;
-		?>
-					<a class="logo" href="<?php echo $CFG->wwwroot ;?>"><img src="<?php echo $OUTPUT->pix_url('uofr_sm','theme'); ?>" alt="University of Regina logo" /></a>
+			?>
+					<a class="logo" href="<?php echo $CFG->wwwroot ;?>"><img src="<?php echo $OUTPUT->pix_url('logos/uofr_sm','theme'); ?>" alt="University of Regina logo" /></a>
 		       		<h1 class="headermain"><a href="<?php echo $headermainlink; ?>"><?php echo $ur_custom_heading ?></a></h1>
 					<?php echo $course_authornames; ?>
 	        <?php } else { ?>
-	        <img src="<?php echo $PAGE->theme->settings->logo_url; ?>">
+	        	<img src="<?php echo $PAGE->theme->settings->logo_url; ?>">
 	        <?php }?>
 	        
 	        <?php 
