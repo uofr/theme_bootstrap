@@ -136,16 +136,20 @@ $doctype = $OUTPUT->doctype() ?>
 			<?php }; ?>          
 			</div>
 		<!--  END BOOTSTRAP RESPONSIVE -->
-	
+
+		<?php if ($hasfooter) { ?>
 		<!-- START OF FOOTER -->
 	    <div id="page-footer" class="wrapper">
-	        <p class="helplink">
-		        <?php echo page_doc_link(get_string('moodledocslink')) ?>
-	        </p>
-	
+	        <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
+			<?php 
+				echo $OUTPUT->login_info();
+				echo $OUTPUT->home_link();
+			?>
+			
 	        <?php echo $OUTPUT->standard_footer_html(); ?>
 	    </div>
 		<!-- END OF FOOTER -->
+		<?php } ?>
 	</div>
 	
 	<?php echo $OUTPUT->standard_end_of_body_html() ?>
