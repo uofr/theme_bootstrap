@@ -56,7 +56,7 @@ $doctype = $OUTPUT->doctype() ?>
 	</div>
 <?php } ?>
 
-	<div id="page">
+	<div id="page" class="<?php $ur_category = ur_check_course_cat(); echo $ur_category['css']; ?>">
 	
 	<?php if ($hasheader) { ?>
 		<!-- START OF HEADER -->
@@ -71,12 +71,19 @@ $doctype = $OUTPUT->doctype() ?>
 						<img src="<?php echo $OUTPUT->pix_url('logos/uofr_sm','theme'); ?>" alt="University of Regina logo" />
 					</a>
 			       	
-			       	<h1 class="headermain"><a href="<?php echo $headermainlink; ?>"><?php echo $ur_custom_heading ?></a></h1>
+			       	<div class="group course-info">
+			       		<?php echo '<h5>'.$ur_category['name'].'</h5>'; ?>
+			       		
+			       		<div class="course-common">
+				       		<!--<h1 class="headermain"><a href="<?php echo $headermainlink; ?>"><?php echo $ur_custom_heading ?></a></h1>-->
+				       		<h1 class="headermain">This is a really long header that I need to wee wrap or stuff is going to hit the fan</h1>
+							<?php echo $course_authornames; ?>
+						</div>
+					</div>
 					
-					<?php echo $course_authornames; ?>
-		        <?php } else { ?>
-		        	<img src="<?php echo $PAGE->theme->settings->logo_url; ?>">
-		        <?php }?>
+				        <?php } else { ?>
+		        			<img src="<?php echo $PAGE->theme->settings->logo_url; ?>">
+				        <?php }?>
 		        
 		        <?php echo $OUTPUT->login_info();?>
 	    	    
