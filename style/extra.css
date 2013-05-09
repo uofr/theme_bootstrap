@@ -26,6 +26,25 @@ p {
 	line-height: 1.5;
 }
 
+#page-content > .span6 {
+	margin-bottom: 40px;
+}
+
+.group {
+  *zoom: 1;
+}
+
+.group:before,
+.group:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.group:after {
+  clear: both;
+}
+
 /* @end */
 
 /* @group Custom Menu */
@@ -42,14 +61,34 @@ p {
 
 .logo {
 	float: left;
+	margin-bottom: 10px;
+	padding-right: 20px;
 }
 
 .headermain {
 	font-size: 20px;
+	margin: 0 0 3px;
 }
 
 #page-header-wrapper {
 	padding-top: 20px;
+}
+
+.course-info {
+	float: left;
+	position: relative;
+	top: -5px;
+}
+
+.course-info h5 {
+	margin: 0;
+	position: absolute;
+	top: 0;
+}
+
+.course-common {
+	position: relative;
+	top: 20px;
 }
 
 /* @end */
@@ -108,7 +147,7 @@ p {
 
 #breadcrumb-wrapper {
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 10px;
 	background-color: #fdc813;
 	border: none;
 }
