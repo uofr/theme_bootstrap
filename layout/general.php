@@ -10,7 +10,6 @@ $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
 $hasheader = (empty($PAGE->layout_options['noheader']));
 
-
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
 
@@ -27,6 +26,7 @@ if ($showsidepre && !$showsidepost) {
 } else if (!$showsidepost && !$showsidepre) {
     $bodyclasses[] = 'content-only';
 }
+
 if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
@@ -75,8 +75,7 @@ $doctype = $OUTPUT->doctype() ?>
 			       		<?php echo '<h5>'.$ur_category['name'].'</h5>'; ?>
 			       		
 			       		<div class="course-common">
-				       		<!--<h1 class="headermain"><a href="<?php echo $headermainlink; ?>"><?php echo $ur_custom_heading ?></a></h1>-->
-				       		<h1 class="headermain">This is a really long header that I need to wee wrap or stuff is going to hit the fan</h1>
+				       		<h1 class="headermain"><a href="<?php echo $headermainlink; ?>"><?php echo $ur_custom_heading ?></a></h1>
 							<?php echo $course_authornames; ?>
 						</div>
 					</div>
