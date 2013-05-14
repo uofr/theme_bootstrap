@@ -7,10 +7,30 @@
 
 /* [[setting:customcss]] */
 
+/* @group Color */
+
+#breadcrumb-wrapper.navbar {
+	background-color: #fdc813 !important;
+}
+
+.breadcrumb {
+	color: #feebaa;
+}
+
+.breadcrumb a {
+	color: #ffffff;
+}
+
+.block {
+	border-top-color: #fec913;
+}
+
+/* @end */
+
 /* @group General */
 
 body {
-	font-size: 12px;
+	font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 a, .logininfo a {
@@ -45,6 +65,12 @@ p {
   clear: both;
 }
 
+/* Forcing fonts to Helvetica. May need to rethink this */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
+}
+
 /* @end */
 
 /* @group Custom Menu */
@@ -76,21 +102,46 @@ p {
 
 .course-info {
 	float: left;
-	position: relative;
-	top: -5px;
+	margin-top: -5px;
 }
 
 .course-info h5 {
 	margin: 0;
-	position: absolute;
-	top: 0;
 }
 
 .course-common {
-	position: relative;
-	top: 20px;
+
 }
 
+div.teacherlist {
+	clear: left;
+}
+
+
+@media ( max-width : 767px){
+
+	#page-header-wrapper {
+		padding-top: 10px;
+	}
+	
+	#page-header .logininfo {
+		float: none;
+		margin: 15px auto 5px;
+		display: table;
+	}
+	
+	.logo {
+		float: none;
+		display: table;
+		margin: 0 auto 20px;
+		padding: 0;
+	}
+	
+	.course-info {
+		float: none;
+		text-align: center;
+	}
+}
 /* @end */
 
 /* @group Log In Info */
@@ -148,28 +199,62 @@ p {
 #breadcrumb-wrapper {
 	display: inline-block;
 	margin-top: 10px;
-	background-color: #fdc813;
 	border: none;
 }
 
-.breadcrumb {
+#breadcrumb {
 	background-color: transparent;
 	font-weight: bold;
 	color: #feebaa;
 }
 
-.breadcrumb a {
+#breadcrumb a {
 	color: #ffffff;
 	text-shadow: none;
 	font-size: 13px;
-	padding-left: 2px;
-	padding-right: 2px;
 }
 
-.breadcrumb a:first-child {
+.breadcrumb span {
+	text-shadow: none;	
+}
+
+#breadcrumb a:first-child {
 	padding-left: 0;
 }
 
+#breadcrumb-wrapper .navbar-inner {
+	background-color: transparent !important;
+	background-image: none !important;
+	border: none;
+	box-shadow: none;
+}
+
+#breadcrumb li span {
+padding: 10px;
+display: inline-block;
+}
+
+#breadcrumb li a {
+	padding-right: 10px;
+}
+
+span.separator {
+	float: left;
+	display: block;
+	padding: 9px 0 !important;
+}
+
+@media (max-width:767px) {
+	span.separator {
+		display: none;
+		visibility: hidden;
+		width: 0;
+	}
+	
+	#breadcrumb a:first-child {
+		padding-left: 10px;
+	}
+}
 /* @end */
 
 /* @end */
@@ -183,12 +268,13 @@ p {
 	   -moz-border-radius: 0;
 	     -o-border-radius: 0;
 	        border-radius: 0;
-	border-top: 5px solid #fec913;
-}
+			border-top-width: 5px;
+			border-top-style: solid;
+		}
 
 .block .header {
 	font-size: 12px;
-	background-color: #f3f4f3;
+	background-color: #f3f3f3;
 	padding-bottom: 3px;
 	border-bottom: 1px solid #dcdcdc;
 }
@@ -302,3 +388,212 @@ p {
 }
 
 /* @end */
+
+/* @group Participants */
+
+.initialbar strong {
+	padding-right: 2px;
+}
+
+/* @end */
+
+/* @group Bootstrap Tables */
+
+/*
+
+Maybe rethink this entirely. It might be that we don't need this here. But tables could use a little work at some point but there are so many different types/classes/ids that I don't really know where to start.
+
+*/
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.generaltable {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.generaltable th,
+.generaltable td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.generaltable th, 
+.forumheaderlist th {
+  font-weight: bold;
+  background-color: #ededed;
+}
+
+.generaltable th {
+  vertical-align: bottom;
+}
+
+.generaltable caption + thead tr:first-child th,
+.generaltable caption + thead tr:first-child td,
+.generaltable colgroup + thead tr:first-child th,
+.generaltable colgroup + thead tr:first-child td,
+.generaltable thead:first-child tr:first-child th,
+.generaltable thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.generaltable tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #dddddd;
+}
+
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child,
+.table-bordered tfoot:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+     -moz-border-radius: 0 0 0 4px;
+          border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child,
+.table-bordered tfoot:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.generaltable tbody tr:nth-child(odd) td, 
+.forumheaderlist tbody tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+th.header {
+	
+}
+
+/* @end */
+
+.course-content .section-summary {
+	border: none;
+}
+
+/* @group Forum */
+
+.path-mod-forum .forumheaderlist td {
+	border-width: 1px 0px 0px 1px;
+	border-color: #e4e5e4 !important;
+}
+
+.path-mod-forum .forumheaderlist td:first-child {
+	border-left: none;
+}
+
+.path-mod-forum .forumheaderlist {
+	background-color: white;
+}
+
+.path-mod-forum .forumheaderlist, .forumpost {
+	background-color: #f9f9f9;
+}
+
+.discussioncontrol.displaymode {
+	margin-bottom: 10px;
+}
+
+/* @end */
+
+/* @group Resources */
+
+
+/* @end */
+
+/* @group Feedback  */
+
+.feedback_item_label_left {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+
+}
+
+.feedback_item_presentation_left {
+	margin-bottom: 20px;
+}
+
+.feedback_item_textarea textarea {
+	margin-left: 0;
+}
+
+.feedback_form input {
+	margin-bottom: 10px;
+}
