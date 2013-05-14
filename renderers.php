@@ -35,7 +35,8 @@ class theme_bootstrap_core_renderer extends core_renderer {
         $htmlblocks = array();
         // Iterate the navarray and display each node
         $itemcount = count($items);
-        $separator =  '&nbsp;/ ';
+        $separator =  '<span class="separator">&gt;</span>';
+        //$separator =  '';
         for ($i=0;$i < $itemcount;$i++) {
             $item = $items[$i];
             if ($item->type == "0" || $item->type == "30") {
@@ -51,7 +52,7 @@ class theme_bootstrap_core_renderer extends core_renderer {
         }
         //accessibility: heading for navbar list  (MDL-20446)
         $navbarcontent = html_writer::tag('span', get_string('pagepath'), array('class'=>'accesshide'));
-        $navbarcontent .= html_writer::tag('ul', join('', $htmlblocks));
+        $navbarcontent .= html_writer::tag('ul', join('', $htmlblocks), array('class'=>'nav'));
         // XHTML
         return $navbarcontent;
     }
