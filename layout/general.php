@@ -90,7 +90,7 @@ $doctype = $OUTPUT->doctype() ?>
 	        		<?php echo $PAGE->headingmenu; ?>
 		    	</div>
 		    	
-		    	<?php if ($hasnavbar) { ?>
+<!--		    	<?php if ($hasnavbar) { ?>
 	            <div class="navbar clearfix" id="breadcrumb-wrapper">
 	                <div class="breadcrumb">
 	                	<?php echo $OUTPUT->navbar(); ?>
@@ -100,7 +100,24 @@ $doctype = $OUTPUT->doctype() ?>
 	                	<?php echo $PAGE->button; ?>
 	                </div>
 	            </div>
-	            <?php } ?>
+	            <?php } ?>-->
+	            
+	            <div class="navbar" id="breadcrumb-wrapper">
+	            	<div class="navbar-inner">
+	            		<div class="container">
+	            			<a class="btn btn-navbar" data-toggle="collapse" data-target="#breadcrumb">
+	            				<span class="icon-bar"></span>
+	            				<span class="icon-bar"></span>
+	            				<span class="icon-bar"></span>
+	            			</a>
+	            			<div class="nav-collapse" id="breadcrumb">
+	            					<?php echo $OUTPUT->navbar(); ?>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <!-- end of breadcrumb navbar -->
+	            
 		    </div>
 	    </div>
 		<!-- END OF HEADER -->
