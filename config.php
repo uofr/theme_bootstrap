@@ -96,7 +96,7 @@ $THEME->layouts = array(
     ),
     'frontpage' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
          'options' => array('nonavbar'=>true),
     ),
