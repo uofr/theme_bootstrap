@@ -601,7 +601,6 @@ th.header {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-weight: bold;
-
 }
 
 .feedback_item_presentation_left {
@@ -614,4 +613,124 @@ th.header {
 
 .feedback_form input {
 	margin-bottom: 10px;
+}
+
+/* @end */
+
+/* @group Course Box */
+
+div.coursebox {
+	border-width: 6px 0 0 0;
+	border-radius: 0;
+	border-color: #dddddd;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	border-right-width: 0;
+	border-left-width: 0;
+	border-top: 6px solid #fdc82f;
+	padding: 5px;
+	display: table;
+}
+
+.coursebox .info .name { 
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+.coursebox .summary { 
+	margin: 7px 0 5px 10px; 
+	font-size: 0.9em; 
+}
+
+.coursebox .info .teachers { 
+	font-size: 0.9em; 
+}
+
+.coursebox .info {
+
+}
+
+div.coursebox.arts {
+	border-top-color: #C9282D;
+}
+
+div.coursebox.business {
+	border-top-color: #2A6EBB;
+}
+
+div.coursebox.khs {
+	border-top-color: #BFB9A7;
+}
+
+div.coursebox.jsgspp {
+	border-top-color: #8B9B3C;
+}	
+
+div.coursebox.education {
+	border-top-color: #FF5A00;
+}
+
+div.coursebox.engineering {
+	border-top-color: #5BB4E5;
+}	
+
+div.coursebox.finearts {
+	border-top-color: #5CC151;
+}
+
+div.coursebox.fnuc {
+	border-top-color: #157DC0;
+}
+
+div.coursebox.gbus {
+	border-top-color: #89022D;
+}
+
+div.coursebox.socialwork {
+	border-top-color: #00A0DF;
+}
+
+div.coursebox.luther {
+	border-top-color: #597EBD;
+}
+
+div.coursebox.nursing {
+	border-top-color: #FBCEB1
+}
+
+div.coursebox.scbscn {
+	border-top-color: #6C9D41;
+}
+
+div.coursebox.science {
+	border-top-color: #007836;
+}	
+
+div.coursebox.urguarantee {
+	border-top-color: #fdc82f;
+}
+
+.unlist {
+	border: 1px solid #dcdddc;
+	background-color: #fbfcfb;
+	padding-top: 10px;
+}
+
+.unlist li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.headingblock.header {
+	padding: 5px 10px;
+	font-size: 1.15em;
+	margin-bottom: 0 !important;
+	background-color: #f2f3f2;
+	border: 1px solid #dbdddb;
+	border-bottom-style: none;
+}
+/* @end */
+
+.block ul.unlist{
+	border: none;
 }
