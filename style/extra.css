@@ -119,7 +119,11 @@ div.teacherlist {
 
 
 @media ( max-width : 767px){
-
+	
+	.headermain {
+		float: none;
+	}
+	
 	#page-header-wrapper {
 		padding-top: 10px;
 	}
