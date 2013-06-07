@@ -314,6 +314,7 @@ span.separator {
 
 .block .content {
 	font-size: 13px;
+	/*background-color: #fdfdfd;*/
 }
 
 .block_tree {
@@ -716,7 +717,7 @@ div.coursebox.urguarantee {
 
 .unlist {
 	border: 1px solid #dcdddc;
-	background-color: #fbfcfb;
+	background-color: #fdfdfd;
 	padding-top: 10px;
 }
 
@@ -729,7 +730,7 @@ div.coursebox.urguarantee {
 	padding: 5px 10px;
 	font-size: 1.15em;
 	margin-bottom: 0 !important;
-	background-color: #f2f3f2;
+	background-color: #f4f4f4;
 	border: 1px solid #dbdddb;
 	border-bottom-style: none;
 }
@@ -738,3 +739,475 @@ div.coursebox.urguarantee {
 .block ul.unlist{
 	border: none;
 }
+
+li.activity {
+	margin-bottom: 10px !important;
+}
+
+/* @group Glossary */
+
+/*Fix glossary styling*/
+
+.glossarycategoryheader {
+	width: 95%;
+	border-radius: 0;
+}
+
+.glossarycategoryheader h2 {
+	text-align: left;
+	padding: 5px;
+}
+
+.glossarypost {
+	margin-bottom: 10px !important;
+	border-radius: 0;
+	padding: 20px;
+}
+
+.glossarypost .concept h3 {
+	font-weight: bold !important;
+	margin-bottom: 10px !important;
+}
+
+/* @end */
+
+/* @group Forum Posts */
+
+/*Fix forum post colours*/
+.forumpost {
+	background-color: #fcfdfc;
+}
+
+.forumpost.unread {
+	background-color: white;
+}
+
+.forumpost.unread .content {
+	border: none !important;
+}
+
+.forumpost.unread .row.header {
+	background-color: #ffd !important;
+}
+
+.forumpost .commands {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-webkit-transition: none;
+	opacity: 1;
+}
+
+.forumpost .subject {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+
+.forumpost .content {
+	margin-top: 10px;
+}
+
+.forumpost .header {
+	margin-left: 0;
+	border-bottom: 1px solid #dbdcdb;
+	background-color: #f2f2f2;
+	padding: 5px 0;
+}
+
+table.mceLayout {
+	width: 100% !important;
+}
+/* @end */
+
+/* @group Hidden Colour - Grades */
+
+/*Adjust hidden colour in grades*/
+
+table#user-grades .hidden, table#user-grades .hidden a {
+	color: #777;
+}
+
+/* @end */
+
+/* @group Backgrounds on Weekly Layouts */
+
+/*Additions for backgrounds on weekly layouts*/
+
+.path-course-view .weeks .content ,
+.path-course-view .topics .content,
+.path-course-view .weeks .section,
+.path-course-view .topics .section,
+.course-content ul.weeks li.section .content { 
+	background-color: white;
+}
+
+.path-course-view .weeks .current, .path-course-view .topics .current, .path-course-view .current td.side {
+	background: #fffcab !important;
+}
+
+/* @end */
+
+/* @group Bug Fixes */
+
+/*Section titles without editing on because, here's the thing, the class changes when editing is turned on. Why? Who knows!*/
+
+.content h3.sectionname, 
+.content h3.section-title {
+	font-weight: bold !important;
+	border-bottom: none !important;
+	font-size: 1.45em;
+	margin-bottom: 15px !important;
+	margin-top:  10px !important;
+	color: black !important;
+	padding-bottom: 5px !important;
+}
+
+/* @end */
+
+/* @group Grade Highlighting */
+
+/*Highlighting in Grades for horizontal and vertical selections */
+
+.hmarked {
+	background-color: #ffd !important;
+}
+
+.grade_type_text.vmarked {
+	background-color: #fffcab !important;
+}
+
+/* @end */
+
+/* @group Message Overlay */
+
+/*Message overlay*/
+
+#newmessageoverlay {
+	background-color: #ffd;
+	border-top: 1px solid #e9e880;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left:  0;
+	text-align: center;
+	margin: 0 auto;
+	color: #4f4f43;
+}
+
+/* @end */
+
+/*Quiz editing colours. So much here. So, so much.*/
+
+/* @group Sideblock */
+
+/*Just the sideblock. For real.*/
+
+.questionbankwindow.block {
+	border: 1px solid #dcdddc !important;
+}
+
+.questionbankwindow.block .header {
+	background-color: #f3f4f3 !important;
+	margin: 0 !important;
+	border-bottom: 1px solid #dcdddc !important;
+}
+
+.questionbankwindow.block .header h2 {
+	color: #323332 !important;
+}
+
+.questionbankwindow.block .header a {
+	color: #516a84 !important;
+}
+
+.questionbankwindow.block .header a:hover {
+	background-color: transparent !important;
+} 
+
+.questionbankwindow.block .categoryinfo {
+	background-color: #fbfcfb !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	border-bottom: 1px solid #e4e5e4 !important;
+}
+
+#categoryquestions {
+	width: 100% !important;
+}
+
+#categoryquestions label {
+	font-size: 1em !important;
+}
+
+#categoryquestions .radio input[type="radio"], #categoryquestions .checkbox input[type="checkbox"] {
+	float: left;
+	margin-left: 0px;
+	top: 4px;
+	position: relative;
+}
+.questionbankwindow.block .categorynamefieldcontainer, .questionbankwindow.block #catmenu  {
+	margin-bottom: 10px !important;
+}
+
+.createnewquestion, 
+.choosecategory, 
+.modulespecificbuttonscontainer, 
+#displayoptions, 
+.questioncontainer .quizsavegradesform {
+	background-color: #fbfcfb !important;
+}
+
+.questionbankwindow.block #catmenu label, .questionbankwindow.block .modulespecificbuttonscontainer strong , .questionbankwindow.block #catmenu label, .questionbankwindow.block .modulespecificbuttonscontainer label{
+	margin-bottom: 5px !important;
+	margin-top: 5px !important;
+	display: inline-block !important;
+	font-weight: bold !important;
+}
+
+.questionbankwindow.block .createnewquestion {
+	padding-bottom: 15px !important;
+}
+
+.categorypagingbarcontainer {
+	padding: 0 !important;
+}
+
+.categorypagingbarcontainer .paging {
+	padding-top: 5px !important;
+	padding-bottom: 5px;
+	background-color: white !important;
+	border-top: 1px solid #dbdddb !important;
+	border-bottom: 1px solid #dbdddb !important;
+}
+
+.questionbankwindow.block .categoryquestionscontainer {
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.questionbankwindow.block #categoryquestions thead th {
+	background-color: #f2f4f2 !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+}
+
+.questionbankwindow.block #categoryquestions tbody td {
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+}
+
+.questionbankwindow.block #categoryquestions tbody tr.r1 {
+	background-color: #f2f4f2 !important;
+}
+
+.categorypagingbarcontainer.pagingbottom .paging {
+	border-bottom: none !important;
+}
+
+.categorypagingbarcontainer.pagingbottom {
+	border-bottom: 1px solid #dbdddb !important;
+}
+
+.questionbankwindow.block .modulespecificbuttonscontainer {
+	padding-top: 5px !important;
+	padding-bottom: 10px !important;
+}
+
+.questionbankwindow.block .modulespecificbuttonscontainer #menucategory {
+	margin: 15px 0 !important;
+}
+
+.questionbankwindow.block .modulespecificbuttonscontainer hr {
+	border-top: 1px solid #d8dbd8 !important;
+	margin: 0 !important;
+}
+
+#recurse_on, #showhidden_on {
+	margin-right: 10px !important;
+	margin-left: 5px !important;
+}
+
+#displayoptions {
+	padding-bottom: 10px;
+}
+
+.iconcol.editaction, .iconcol.previewaction {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.points form label, .points form a{
+	font-size: .9em !important;
+}
+
+
+/* @end */
+
+/* @group Beginning of main question block */
+
+/*
+#quizcontentsblock .statusbar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#quizcontentsblock .statusdisplay {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#quizcontentsblock .pagecontent {
+	background-color: #fcfcfc !important;
+	border-radius: 0px !important;
+	border: 1px solid #dcdddc !important;
+}
+
+#quizcontentsblock .quizpage span.pagetitle {
+	font-weight: bold !important;
+	color: #333 !important;
+}
+
+#quizcontentsblock .pagecontent .content {
+	background-color: transparent !important;
+}
+
+#quizcontentsblock .pagecontent .questioncontainer {
+	margin-top: 0px;
+}
+
+.quizpage .pagecontent {
+		margin-bottom: 20px !important;
+}
+
+.questioncontentcontainer li {
+	margin-bottom: 10px;
+}
+
+.randomquestionqlist {
+	background: transparent !important;
+}
+
+.questioncontentcontainer ul {
+	background-color: white;
+	border: 1px solid #dcdddc !important;
+	padding: 0 !important;
+}
+
+.questionname .smallicon {
+	position: relative;
+	top: 4px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.points {
+	background-color: #daddda !important;
+	border-left: none !important;
+	padding: 1px !important;
+}
+
+.quizsavegradesform div {
+	background-color: #f3f4f3;
+	padding: 1px !important;
+}
+*/
+/* @end */
+
+/* @group Books - Sidebar */
+
+.book_toc_numbered {
+	font-size: 1em !important;	
+}
+
+.book_toc_numbered a {
+	text-decoration: none;
+}
+
+.book_toc_numbered ul {
+	margin: 5px 0;
+}
+
+.book_toc_numbered li > ul {
+	margin: 5px 0 5px 10px !important;
+}
+
+.book_toc_numbered li > ul > li {
+	margin-bottom: 5px;
+}
+
+.path-mod-book .book_toc_none,
+.path-mod-book .book_toc_numbered,
+.path-mod-book .book_toc_bullets,
+.path-mod-book .book_toc_indented {
+  font-size: 0.9em;
+}
+
+/* @end */
+
+/* @group Bookshelf */
+
+/* @end */
+
+.contentafterlink {
+	margin-top: 5px;
+}
+
+.toggle h3.sectionname {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding-top: 5px !important;
+}
+
+.commands {
+	opacity: 0.3;
+	-webkit-transition: opacity 0.5s ease-in-out 0s; 
+}
+
+.commands:hover {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in-out 0s;
+}
+
+/* @group Quiz */
+.que .formulation {
+	background-color: #fdfdfd !important;
+}
+
+.que .info {
+	background-color: #fdfdfd !important;
+}
+
+.que h2.no {
+	margin-left: -6px;
+	margin-right: -6px;
+	margin-top: -6px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #dbdcdb;
+}
+
+.que .editquestion {
+	margin: 10px 0 5px !important;
+}
+
+.que .questionflagtext {
+	display: block;
+}
+
+/* @end */
+
+/* @group Mail */
+
+#mod_mail_navbar li img {
+	position: relative;
+	top: -4px;
+}
+
+#mod_mail_navbar li a {
+	
+}
+
+/* @end */
