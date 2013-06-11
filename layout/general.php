@@ -67,9 +67,7 @@ $doctype = $OUTPUT->doctype() ?>
 					//$ur_custom_heading = (strpos($PAGE->heading,$COURSE->shortname)===false) ? $COURSE->shortname.': '.$PAGE->heading : $PAGE->heading;
 					$ur_custom_heading = $COURSE->fullname;
 				?>
-					<a class="logo" href="<?php echo $CFG->wwwroot ;?>">
-						<img src="<?php echo $OUTPUT->pix_url('logos/uofr_sm','theme'); ?>" alt="University of Regina logo" />
-					</a>
+					<a class="logo hide-text" href="<?php echo $CFG->wwwroot ;?>">UR Courses</a>
 			       	
 			       	<div class="group course-info">
 			       		<?php echo '<h5>'.$ur_category['name'].'</h5>'; ?>
