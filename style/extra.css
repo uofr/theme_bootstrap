@@ -34,7 +34,7 @@ body {
 }
 
 a, .logininfo a {
-	color: #526a85;
+	color: #4977a7;
 	text-decoration: underline;
 }
 
@@ -150,6 +150,10 @@ div.teacherlist {
 		float: none;
 		text-align: center;
 	}
+	
+	.logininfo {
+		margin-top: 10px;
+	}
 }
 /* @end */
 
@@ -162,6 +166,7 @@ div.teacherlist {
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 	        border-radius: 3px;
+	margin-top: -8px;
 }
 
 .logininfo a {
