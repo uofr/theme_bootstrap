@@ -84,7 +84,9 @@ h1, h2, h3, h4, h5, h6 {
 /* @group Header */
 
 /* @group Identity */
-
+#page-header {
+	margin-top: 0;
+}
 .logo {
 	float: left;
 	margin-bottom: 10px;
@@ -1310,6 +1312,10 @@ cite {
 	padding-left: 10px;
 }
 
+figure figcaption {
+	text-align: center;
+}
+
 /* @end */
 
 /* @end */
@@ -1324,8 +1330,8 @@ cite {
 }
 
 .book_content td { 
-	padding-top: 2px; 
-	padding-bottom: 2px;
+	padding-top: 5px; 
+	padding-bottom: 5px;
 }
 
 .book_content table { 
@@ -1339,6 +1345,7 @@ cite {
 	color: #000; 
 	padding-top: 5px; 
 	padding-bottom: 5px;
+	text-align: left;
 }
 
 .book_content tr { 
