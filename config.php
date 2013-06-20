@@ -73,86 +73,94 @@ $THEME->layouts = array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'standard' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'course' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-pre'
+        'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'coursecategory' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'incourse' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'frontpage' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-         'options' => array('nonavbar'=>true),
+         'options' => array('nonavbar'=>true,'nocustommenu'=>true),
     ),
     'admin' => array(
         'file' => 'general.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'mydashboard' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('langmenu'=>true),
+        'options' => array('langmenu'=>true,'nocustommenu'=>true),
     ),
     'mypublic' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
     'login' => array(
         'file' => 'general.php',
         'regions' => array(),
         'options' => array('langmenu'=>true),
-        'options' => array('nonavbar'=>true,'noheader'=>true),
+        'options' => array('nonavbar'=>true,'noheader'=>false,'nocustommenu'=>true),
     ),
     'popup' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true),
+        'options' => array('nofooter'=>true,'noblocks'=>true,'nonavbar'=>true,'nocustommenu'=>true),
     ),
     'frametop' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true),
+        'options' => array('nofooter'=>true,'nocustommenu'=>true),
     ),
     'maintenance' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>true),
+        'options' => array('nofooter'=>true, 'nonavbar'=>true,'nocustommenu'=>true),
     ),
     'embedded' => array(
         'theme' => 'canvas',
         'file' => 'embedded.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>true),
+        'options' => array('nofooter'=>true, 'nonavbar'=>true,'nocustommenu'=>true),
     ),
     // Should display the content and basic headers only.
     'print' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>false, 'noblocks'=>true),
+        'options' => array('nofooter'=>true,'nonavbar'=>false,'noblocks'=>true),
     ),
     'report' => array(
         'file' => 'general.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
+        'options' => array('nocustommenu'=>true),
     ),
 );
 
