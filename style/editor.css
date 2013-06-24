@@ -2304,3 +2304,291 @@ html[dir="rtl"] .wp-switch-editor {
 	padding-right: 0;
 	padding-left: 4px
 }
+
+/* @group Callouts */
+
+/* @group Text */
+
+.book_content blockquote { 
+	border-left: 1px solid #e0e0e0; 
+	background-color: #fafafa; 
+	padding: 10px 20px 5px; 
+	margin: 0 20px 10px;
+}
+
+.book_content blockquote p { 
+	margin-bottom: 5px;
+}
+
+cite {
+	font-style: italic;
+}
+
+/* @group Definition List */
+
+.book_content dl { 
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
+	margin-bottom: 10px;
+}
+
+.book_content dt { 
+	font-weight: bold; 
+	color: black; 
+	margin-top: 5px;
+}
+
+.book_content dd { 
+	padding-left: 10px;
+}
+
+figure figcaption {
+	text-align: center;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Table */
+
+.book_content caption { 
+	text-align: left; 
+	font-weight: bold; 
+	font-size: 105%; 
+	color: black;
+}
+
+.book_content td { 
+	padding-top: 5px; 
+	padding-bottom: 5px;
+}
+
+.book_content table { 
+	width: 100%; 
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
+	margin: 10px 0;
+}
+
+.book_content th { 
+	background-color: #fff; 
+	color: #000; 
+	padding-top: 5px; 
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+.book_content tr { 
+	font-size: 90%; 
+	text-indent: .5em; 
+	color: #363636;
+}
+
+.book_content tr:nth-child(2n+1) { 
+	background-color: #f1f6fb;
+}
+
+.book_content tr:nth-child(2n) { 
+	
+}
+
+/* @end */
+
+/* @group Lists */
+
+.book_content ol { 
+	list-style-type: decimal; 
+	/*padding-left: 20px;*/
+}
+
+.book_content li { 
+	margin-bottom: 10px;
+}
+
+.book_content ul { 
+	list-style-type: disc; 
+	/*padding-left: 20px;*/
+}
+
+/* @end */
+
+/* @group Callout Blocks */
+
+.callout h3, div[class*="_block_callout"] h3 { 
+	margin: 0 0 5px; 
+	font-weight: bold;
+}
+
+.callout, div[class*="_block_callout"] {
+	-webkit-border-radius: 10px;
+	background-position: 15px 15px !important; 
+	padding: 10px 10px 10px 85px; 
+	font-family: Helvetica, "Helvetica Neue", Arial, Geneva, sans-serif; 
+	color: black;
+	border: 1px solid #e6e6e6;
+	margin: 10px 0;
+}
+
+.question_block, div[class*="question_block"] { 
+	background: url([[pix:theme|icons/48/30]]) no-repeat;
+}
+
+.important_block, div[class*="important_block"] { 
+	background: url([[pix:theme|icons/48/10]]) no-repeat;
+}
+
+.links_block, div[class*="links_block"] { 
+	background: url([[pix:theme|icons/48/156]]) no-repeat;
+}
+
+.reading_block, div[class*="reading_block"] { 
+	background: url([[pix:theme|icons/48/158]]) no-repeat;
+}
+
+.audio_block, div[class*="audio_block"] { 
+	background: url([[pix:theme|icons/48/58]]) no-repeat;
+}
+
+.ideas_block, div[class*="ideas_block"] { 
+	background: url([[pix:theme|icons/48/11]]) no-repeat;
+}
+
+.notes_block, div[class*="notes_block"] { 
+	background: url([[pix:theme|icons/48/145]]) no-repeat;
+}
+
+.quiz_block, div[class*="quiz_block"] { 
+	background: url([[pix:theme|icons/48/155]]) no-repeat;
+}
+
+.task_block, div[class*="task_block"] { 
+	background: url([[pix:theme|icons/48/141]]) no-repeat;
+}
+
+.blog_block, div[class*="blog_block"] { 
+	background: url([[pix:theme|icons/48/157]]) no-repeat;
+}
+
+.assignment_block, div[class*="assign_block"], div[class*="assignment_block"] { 
+	background: url([[pix:theme|icons/48/153]]) no-repeat;
+}
+
+.discussion_block, div[class*="discussion_block"] { 
+	background: url([[pix:theme|icons/48/73]]) no-repeat;
+}
+
+.video_block, div[class*="video_block"] { 
+	background: url([[pix:theme|icons/48/51]]) no-repeat;
+}
+
+.elder_block, div[class*="elder_block"] { 
+	background: url([[pix:theme|icons/48/144]]) no-repeat;
+}
+
+/* Begin Additions */
+
+.fact_block, div[class*="fact_block"] { 
+	background: url([[pix:theme|icons/48/159]]) no-repeat;
+}
+
+.labs_block, div[class*="labs_block"] { 
+	background: url([[pix:theme|icons/48/148]]) no-repeat;
+}
+
+.reflect_block, div[class*="reflect_block"] { 
+	background: url([[pix:theme|icons/48/160]]) no-repeat;
+}
+
+.fyi_block, div[class*="fyi_block"] { 
+	background: url([[pix:theme|icons/48/161]]) no-repeat;
+}
+
+.aims_block, div[class*="aims_block"] { 
+	background: url([[pix:theme|icons/48/147]]) no-repeat;
+}
+
+.start_block, div[class*="start_block"] { 
+	background: url([[pix:theme|icons/48/166]]) no-repeat;
+}
+
+.resources_block, div[class*="resources_block"] { 
+	background: url([[pix:theme|icons/48/105]]) no-repeat;
+}
+
+.example_block, div[class*="example_block"] {
+	background: url([[pix:theme|icons/48/162]]) no-repeat;
+}
+
+.activity_block, div[class*="activity_block"] {
+	background: url([[pix:theme|icons/48/163]]) no-repeat;
+}
+
+.feedback_block, div[class*="feedback_block"] {
+	background: url([[pix:theme|icons/48/164]]) no-repeat;
+}
+
+.objectives_block, div[class*="objectives_block"] {
+	background: url([[pix:theme|icons/48/165]]) no-repeat;
+}
+
+.chat_block, div[class*="chat_block"] {
+	background: url([[pix:theme|icons/48/154]]) no-repeat;
+}
+
+.forum_block, div[class*="forum_block"] {
+	background: url([[pix:theme|icons/48/167]]) no-repeat;
+}
+
+.wiki_block, div[class*="wiki_block"] {
+	background: url([[pix:theme|icons/48/168]]) no-repeat;
+}
+
+
+/* End Additions */
+
+/* @end */
+
+/* @group Images */
+
+.book_content img {
+	margin: 0 auto 10px;
+	display: block; 
+	padding: 10px; 
+	background-color: white; 
+	border: 1px solid #e6e6e6;
+}
+
+p.caption { 
+	margin-left: auto; 
+	margin-right: auto;
+	max-width: 45em; 
+	display: block; 
+	text-align: center; 
+	font: bold 85%/1.2 Helvetica, "Helvetica Neue", Arial, Geneva, sans-serif; 
+	margin-bottom: 10px;
+}
+
+.image.right {
+	float: right;
+	width: auto;
+	margin-left: 10px;
+}
+
+.image.left {
+	float: left;
+	width: auto;
+	margin-right: 10px
+}
+
+.image.center {
+	float: none;
+	width: auto;
+	margin: 0 auto;
+}
+
+.image tr {
+	background-color: transparent;
+}
+
+/* @end */
+
+/* @end */
