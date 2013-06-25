@@ -461,6 +461,7 @@ span.separator {
 Maybe rethink this entirely. It might be that we don't need this here. But tables could use a little work at some point but there are so many different types/classes/ids that I don't really know where to start.
 
 */
+
 table {
   max-width: 100%;
   background-color: transparent;
@@ -481,6 +482,12 @@ table {
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
+  display: table-cell !important;
+  /* No time to track this down but there's something setting th and td's to display: table.*/
+}
+
+.path-grade-report-grader .flexible th {
+
 }
 
 .generaltable th, 
@@ -489,7 +496,7 @@ table {
   background-color: #ededed;
 }
 
-.generaltable th {
+.generaltable th, .generaltable td {
   vertical-align: bottom;
 }
 
@@ -509,6 +516,7 @@ table {
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px;
+
 }
 
 .table-bordered {
@@ -909,6 +917,146 @@ table#user-grades .hidden, table#user-grades .hidden a {
 	background-color: #fffcab !important;
 }
 
+/* @group plugins gradereport_user */
+
+.user-grade { 
+	border: 1px solid #dbdddb;
+	padding: 0.25em;
+	font-size: 0.95em; 
+}
+
+.user-grade thead { 
+	border-bottom: none
+}
+
+.user-grade thead th { 
+	padding: 0.5em 0.75em 0.5em !important; 
+}
+
+.user-grade td.oddd1 { 
+	background-color: #f3f8fa; 
+}
+
+.user-grade td.oddd2 { 
+	background-color: #f2f9f5; 
+}
+
+.user-grade td.oddd3 { 
+	background-color: #f6f2fa; 
+}
+
+.user-grade td.oddd4 { 
+	background-color: #fbf2f3; 
+}
+
+.user-grade td.evend2 { 
+	background-color: #f9f5f1; 
+}
+
+.user-grade td.evend3 { 
+	background-color: #f9f9f1; 
+}
+
+.user-grade td.evend4 { 
+	background-color: #faf1e7; 
+}
+
+.user-grade td.b1t,
+.user-grade td.b2t { 
+	border-top: 1px solid #dcdddc; 
+}
+
+.user-grade td.b1r,
+.user-grade td.b2r { 
+	border-right: 1px solid #dcdddc; 
+}
+
+.user-grade td.b1b,
+.user-grade td.b2b { 
+	border-bottom: 1px solid #dcdddc; 
+}
+
+.user-grade td.b1l,
+.user-grade td.b2l { 
+	border-left: 1px solid #dcdddc; 
+}
+
+.user-grade td.baggt { 
+	border-top: 2px solid #dcdddc; 
+}
+
+.user-grade td.baggb { 
+	border-bottom: 2px solid #dcdddc; 
+}
+
+.user-grade td.item { 
+	border-left: 1px solid #dcdddc; 
+	border-right: 1px solid #dcdddc; 
+}
+
+.user-grade td.excluded { 
+	background-color: #eaeaea; 
+}
+
+table.user-grade td.feedbacktext { 
+	font-size: .95em;
+}
+
+/* @end */
+
+/* @group plugins gradereport_grader */
+
+table#user-grades tr.avg td.cell { 
+	background-color: #f2f9f5;
+	color: #429164; 
+}
+
+table#user-grades tr td.overridden { 
+	background-color: #feedc4; 
+}
+
+table#user-grades tr.odd td.overridden { 
+	background-color: #fee5a8; 
+}
+
+table#user-grades tr td.ajaxoverridden { 
+	background-color: #feedc4; 
+}
+
+table#user-grades tr.odd td.ajaxoverridden { 
+	background-color: #fee5a8; 
+}
+
+table#user-grades td.vmarked,
+table#user-grades tr.odd td.vmarked,
+table#user-grades td.vmarked,
+table#user-grades tr.odd td.vmarked,
+table#user-grades tr.even td.vmarked { 
+	background-color: #fefcc5; 
+}
+
+table#user-grades td.hmarked,
+table#user-grades tr.odd td.hmarked,
+table#user-grades td.hmarked,
+table#user-grades tr.odd td.hmarked,
+table#user-grades tr.even td.hmarked,
+table#user-grades tr.odd th.hmarked,
+table#user-grades tr.even th.hmarked { 
+	background-color: #fefa9d; 
+}
+
+.path-grade-report-grader table tr.avg td.cell,
+table#user-grades td.controls,
+.path-grade-report-grader table tr.avg,
+.path-grade-report-grader table tr.avg td,
+.path-grade-report-grader table tr.avg th { 
+	background-color: #f3f8fa; 
+}
+
+/* @end */
+.dimmed_text {
+	color: #888;
+}
 .paging {
 	margin-top: 10px;
 	font-weight: bold;
