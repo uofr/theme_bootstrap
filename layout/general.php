@@ -110,6 +110,9 @@ $doctype = $OUTPUT->doctype() ?>
 	            			</a>
 	            			<div class="nav-collapse" id="breadcrumb">
 	            					<?php echo $OUTPUT->navbar(); ?>
+	            					<div class="navbutton">
+	            						<?php echo $PAGE->button; ?>
+	            					</div>
 	            			</div>
 	            		</div>
 	            	</div>

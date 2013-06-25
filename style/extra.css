@@ -211,6 +211,13 @@ div.teacherlist {
 /* @end */
 
 /* @group Breadcrumb */
+ul.nav {
+	width: 80% !important;
+}
+
+#breadcrumb .navbutton {
+	margin-top: 5px;
+}
 
 #breadcrumb-wrapper {
 	display: inline-block;
@@ -270,12 +277,17 @@ span.separator {
 	#breadcrumb a:hover, #breadcrumb a:active {
 		background-color: #f2b505;
 	}
+	
+	#breadcrumb .navbutton {
+		display: none;
+	}
 }
 
 #breadcrumb li a {
 	padding-left: 15px;
 	padding-right: 10px;
 }
+
 /* @end */
 
 /* @end */
@@ -1575,3 +1587,11 @@ p.caption {
 /* @end */
 
 /* @end */
+
+.toggle {
+	background-color: #f2f2f2 !important;
+}
+
+.cps_centre {
+
+}
