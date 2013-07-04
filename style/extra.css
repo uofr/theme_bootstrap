@@ -76,6 +76,10 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+select {
+	margin-bottom: 10px;
+}
 /* @end */
 
 /* @group Custom Menu */
