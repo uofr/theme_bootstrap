@@ -27,6 +27,18 @@
 
 /* @end */
 
+/*@group Login */
+.loginform .clearer {
+	margin-bottom: 5px;
+}
+
+.rememberpass {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* @end */
+
 /* @group General */
 
 body {
@@ -80,6 +92,7 @@ img {
 select {
 	margin-bottom: 10px;
 }
+
 /* @end */
 
 /* @group Custom Menu */
