@@ -818,6 +818,7 @@ li.activity {
 
 table.event {
 	border: 1px solid #e2e3e2;
+	padding-right: 10px;
 }
 
 table.event .name {
