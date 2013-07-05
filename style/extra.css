@@ -383,6 +383,20 @@ select {
 	padding-bottom: 0 !important;
 }
 
+.block_news_items .post {
+	margin-bottom: 15px;
+}
+
+.block_news_items .date {
+	font-weight: 200;
+	font-size: 12px;
+}
+
+.block_news_items .name {
+	font-weight: 600;
+	font-size: 12px;
+}
+
 	/* @group Search Form */
 	
 	.adminsearchform {
