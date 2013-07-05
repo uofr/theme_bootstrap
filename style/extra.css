@@ -814,6 +814,43 @@ li.activity {
 
 /* @end */
 
+/* @group Events */
+
+table.event {
+	border: 1px solid #e2e3e2;
+}
+
+table.event .name {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+table.event .course {
+	margin-top: 5px;
+}
+
+table.event td.calendar_event_course {
+	background-color: white;
+	border-top: 5px solid #ffd3bc;
+}
+
+table.event td.calendar_event_global {
+	background-color: white;
+	border-top: 5px solid #d5f7cc;
+}
+
+table.event td.calendar_event_group {
+	background-color: white;
+	border-top: 5px solid #fde7ad;
+}
+
+table.event td.calendar_event_user {
+	background-color: white;
+	border-top: 5px solid #dbe6ec;
+}
+
+/* @end */
+
 /* @group Glossary */
 
 .glossarycategoryheader {
