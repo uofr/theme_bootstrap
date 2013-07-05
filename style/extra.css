@@ -397,6 +397,12 @@ select {
 	font-size: 12px;
 }
 
+.event .date {
+	font-weight: 600;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
 	/* @group Search Form */
 	
 	.adminsearchform {
