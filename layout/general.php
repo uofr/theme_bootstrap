@@ -49,11 +49,12 @@ $doctype = $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <?php if ($hascustommenu) { ?>
-	<div id="custommenuwrap">
+	<!--<div id="custommenuwrap">
 		<div id="custommenu">
-			<?php echo $custommenu; ?>
-		</div>
-	</div>
+			<?php echo $custommenu; ?>-->
+			<?php include 'userbar.php'; ?>
+<!--		</div>
+	</div> -->
 <?php } ?>
 
 	<div id="page" class="<?php $ur_category = ur_check_course_cat(); echo $ur_category['css']; ?>">
@@ -179,7 +180,7 @@ $doctype = $OUTPUT->doctype() ?>
 	<?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 	<?php if (!empty($PAGE->theme->settings->enablejquery)) {?>
-		<script src="<?php echo $CFG->wwwroot;?>/theme/bootstrap/js/jquery.js"></script>
+		<!--<script src="<?php echo $CFG->wwwroot;?>/theme/bootstrap/js/jquery.js"></script>-->
 		<script src="<?php echo $CFG->wwwroot;?>/theme/bootstrap/js/bootstrap-dropdown.js"></script>
 		<script src="<?php echo $CFG->wwwroot;?>/theme/bootstrap/js/bootstrap-collapse.js"></script>
 	<?php }?>

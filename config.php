@@ -42,7 +42,9 @@ $THEME->sheets = array(
     'ie7',//ie7 fixes for moodle 2.3 and newer. make is usable in ie7, not pretty
     'extra',//contains custom css from the theme user settings
     'quiz',//quiz module styling
-    'moddata'//data module styling
+    'moddata',//data module styling
+	'bar', //userbar from cubic
+	'user' //user form cubic
 );
 
 //the sheet editor-styling is disabled untill it fully supports all editor options
@@ -181,7 +183,7 @@ $THEME->csspostprocess = 'bootstrap_user_settings';
 // (gets included in the head)
 ////////////////////////////////////////////////////
 
-// $THEME->javascripts_footer
+$THEME->javascripts_footer = array('jquery', 'jquery-ui-1.8.min', 'jquery.mCustomScrollbar', 'jquery.mousewheel.min', 'effects');
 
 ////////////////////////////////////////////////////
 // As above but will be included in the page footer.

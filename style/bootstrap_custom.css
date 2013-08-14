@@ -581,6 +581,12 @@ input[type="image"] {
   #page {
   padding-right: 20px;
   padding-left: 20px;
+
+  width: auto;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  
   }
   #page-header {
   margin-top: 0px;
@@ -640,11 +646,13 @@ div.yui3-overlay-content.yui3-widget-stdmod {
 	padding-top: 4px;
 }
 
+/*
 .bookshelf_book {
 text-indent: -16px;
 margin-left: 16px;
 display: inline-block;
 }
+*/
 
 .block_bookshelf .book_toc_none li {
 margin-top: 5px;
